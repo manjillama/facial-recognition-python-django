@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" href="{% static 'img/favicon.jpg' %}" />
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'jquery.min.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+
+  </head>
+
+  <body>
+
+    {% block content %}
+    {% endblock %}
+    <footer style="background-color: rgb(28, 28, 28);padding:2em 0;margin-top:1em;">
+      <p class="text-center" style="margin-bottom:0;color:#fff">Created by Manjil Tamang and Prabin Shrestha as a final project for Artificial Intellience Module.</p>
+    </footer>
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'bootstrap/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/particles.min.js' %}" ></script>
+    <script src="{% static 'script.js' %}"></script>
+
+  </body>
+
+</html>

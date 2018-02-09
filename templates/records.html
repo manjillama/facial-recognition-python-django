@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+{% block title %}Image Recognition | AI Course-work{% endblock %}
+{% block content %}
+<div class="container">
+  <h1 class="jumbotron">Records</h1>
+  <ul>
+    {% for record in records %}
+      <li><a href="/records/details/{{record.id}}">{{record.first_name}} {{record.last_name}}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
