@@ -9,6 +9,13 @@ General Languages and versions
     •	Sklearn version: 0.19.1
     •	Mysql Database
 
+Change mysql setting
+
+       go to settings.py under faceRecog folder.
+       change database configuration under DATABASES object.
+
+
+
 Run -
 
     python manage.py runserver --nothreading –noreload
